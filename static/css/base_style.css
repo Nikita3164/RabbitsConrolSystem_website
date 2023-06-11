@@ -1,0 +1,264 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 80px;
+    background-color: rgb(69, 69, 221);
+    transition: 0.3s;
+}
+
+.header_hidden {
+    transform: translateY(-100%);
+}
+
+.logo_text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    right: auto;
+    position: absolute;
+    left: 40px;
+    top: 17px;  
+}
+
+.menu{
+    background-origin: content-box;
+    background: url(/static/img/menu.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 23px;
+    position: absolute;
+    right: 40px;
+    top: 17px;
+}
+
+.menu_content{
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateX(100%);
+    width: 350px;
+    height: calc(100vh - 80px);
+    top: 80px;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    position: fixed;
+    right: 0;
+}
+
+#authorization{
+    padding: 30px 0 50px !important;
+}
+
+.menu:hover .menu_content{
+    right: 0;
+    opacity: 1;
+    background-color: rgb(65, 65, 65);
+    transform: translateX(0);
+}
+
+.menu:hover header{
+    background-color: rgb(69, 69, 221) !important;
+}
+
+
+.menu_string{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.menu_string:hover{
+    color: rgb(69, 69, 221);
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+    bottom: 15px !important;
+    top: auto !important;
+    --swiper-navigation-size: 30px;
+    color: rgb(69, 69, 221) !important;
+}
+
+.swiper-button-next{
+    right: 500px !important;
+}
+
+.swiper-button-prev{
+    left: 500px !important;
+}
+
+.swiper-scrollbar{
+    height: 7px !important;
+    border-radius: 0 !important;
+    left: calc(50% - 150px) !important;
+    width: 300px !important;
+    margin: 0 auto !important;
+    bottom: 25px !important;
+    top: auto !important;
+    --swiper-scrollbar-drag-bg-color: rgb(69, 69, 221);
+}
+
+.swiper-scrollbar-drag{
+    border-radius: 0 !important;
+}
+
+.block{
+    position: relative;
+    height: 100vh;
+    background: url(/static/img/rabbit.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.title_img{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    background-color: #4545dd;
+    color: white;
+    font-size: 60px;
+    width: 576px;
+    text-align: center;
+    left: 799px;
+    top: 250px;
+}
+
+.bottom{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    height: 80px;
+    border-radius: 5px;
+    position: absolute;
+    left: 930px;
+    top: 460px;
+    background-color: rgb(108, 108, 224);
+    transition: 0.3s;
+    
+}
+
+.bottom_text{
+    padding-top: 8px;
+}
+
+.bottom:hover{
+    background-color: rgb(69, 69, 221);
+}
+
+#cheaps{
+    background: url(/static/img/cheaps.jpg) no-repeat center center;
+}
+
+#cheaps .title_img{
+    top: 160px;
+}
+
+#cooperation{
+    background: url(/static/img/cooperation.jpg) no-repeat center center;
+}
+
+#cooperation .title_img{
+    left: 15px;
+}
+
+#cooperation .bottom{
+    left: 130px;
+}
+
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+}
+
+.text{
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    padding-top: 15vh; 
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cell_img{
+    display: inline-block;
+    width: 30%;
+    padding: 15vh 50px 0;
+}
+
+.cell_img img{
+    width: 100%;
+}
+
+.about{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+
+.about_system, .about_us, .cooperation{
+    height: 100vh;
+}
+
+.about_us{
+    background-color: rgb(69, 69, 221);
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.title_foot{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 50px 0;
+}
+
+.foot_string{
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+.foot_string:hover{
+    color: rgb(108, 108, 224);
+    cursor: pointer;
+}
+
+.number{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
