@@ -17,7 +17,7 @@ a:hover{
 
 
 .container{
-    width: 1400px;
+    width: 1600px;
     margin: 0 auto;
 }
 
@@ -144,7 +144,7 @@ header{
     font-size: 60px;
     width: 576px;
     text-align: center;
-    left: 799px;
+    right: 150px;
     top: 250px;
 }
 
@@ -157,7 +157,7 @@ header{
     height: 80px;
     border-radius: 5px;
     position: absolute;
-    left: 930px;
+    right: 250px;
     top: 460px;
     background-color: rgb(108, 108, 224);
     transition: 0.3s;
@@ -258,6 +258,24 @@ footer{
     font-weight: 600;
     text-align: center;
     padding: 30px 0;
+}
+
+
+@media (max-width: 1500px){
+    .container{
+        width: 1400px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .text{
+        font-size: 25px;
+        padding-top: 15vh; 
+    }
+
+
 }
 
 
