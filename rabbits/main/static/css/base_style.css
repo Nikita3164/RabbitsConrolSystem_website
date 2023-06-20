@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 a{
@@ -89,8 +90,7 @@ header{
 }
 
 
-.menu_string{
-    font-family: "Poppins", sans-serif;
+.menu_string, .user_string{
     font-size: 25px;
 }
 

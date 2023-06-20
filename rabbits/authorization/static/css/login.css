@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    height: calc(100vh - 150px);
+}
+
+form li, form span{
+    display: none;
+}
+
+#reg{
+    padding-top: 100px;
+}
+
+h2{
+    padding-top: 130px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.message{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.password, .reg{
+    display: inline-block;
+    font-size: 15px;
+    padding-top: 5px;
+    color: rgb(108, 108, 224);
+}
+
+.password:hover, .reg:hover{
+    color: rgb(69, 69, 221);
+    cursor: pointer;
+}
+
+.reg{
+    float: right;
+}
+
+button{
+    width: 405px;
+    height: 45px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(108, 108, 224);
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(69, 69, 221);
+    cursor: pointer;
+}

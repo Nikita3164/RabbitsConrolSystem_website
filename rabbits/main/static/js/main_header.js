@@ -21,8 +21,3 @@ window.addEventListener('scroll', function() {
 });
 
 
-let menu = document.querySelector('.menu');
-menu.addEventListener('onmouseover', function() {
-    document.querySelector('header').style.backgroundColor = 'rgb(69, 69, 221)';
-});
-
