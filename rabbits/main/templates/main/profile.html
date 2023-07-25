@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/profile.css">
+{% endblock %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+    <div class="background">
+        <div class="container">
+            <h1>{{ user.first_name }} {{ user.last_name }}</h2>
+            <div class="data">
+                <h2>Ваши данные:</h2>
+                <div class="login">Логин - {{ user.username }}</div>
+                <div class="email"> Электронная почта - {{ user.email }}</div>
+                {% if user.is_superuser %}
+                    <div class="admin">Вы являетесь администратором, <a id="adm_ref" href="/admin">перейти в админ-панель</a></div>
+                {% endif %}
+                <div class="exit"><a href="{% url 'logout' %}">Выйти из аккаунта</a></div>
+            </div><!--
+            --><div class="bases">
+                <h2>Ваши базы данных:</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}

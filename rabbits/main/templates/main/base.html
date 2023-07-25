@@ -14,7 +14,7 @@
         <div class="menu">
             <div class="menu_content">
                 {% if user.is_authenticated %}
-                <li id="authorization" type="none"><div class="user_string">Здравствуйте, <a class="menu_string">{{ user.username }}</a>!</div></li>
+                    <li id="authorization" type="none"><div class="user_string">Здравствуйте, <a class="menu_string" href="/profile">{{ user.first_name }}</a>!</div></li>
                 {% else %}
                     <li id="authorization" type="none"><a class="menu_string" href="authorization/login">Авторизация</a></li>
                 {% endif %}    

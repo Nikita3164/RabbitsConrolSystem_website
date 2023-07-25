@@ -1,0 +1,46 @@
+h1{
+    padding-top: 80px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.data{
+    width: 450px;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190);
+    display: inline-block;
+}
+
+h2{
+    padding: 15px 10px;
+}
+
+.login, .email, .admin{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#adm_ref{
+    color: rgb(69, 69, 221);
+}
+
+.exit{
+    font-size: 20px;
+    padding: 15px 10px;
+    color: red;
+}
+
+.exit:hover{
+    cursor: pointer;
+}
+
+.bases{
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190);
+    width: calc(100% - 465px);
+    height: calc(100vh - 330px);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}

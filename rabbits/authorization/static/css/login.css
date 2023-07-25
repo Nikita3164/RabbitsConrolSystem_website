@@ -1,12 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.background{
-    height: calc(100vh - 150px);
-}
-
 form li, form span{
     display: none;
 }
@@ -68,6 +59,7 @@ button{
     margin: 0 auto;
     font-size: 20px;
     border: none;
+    border-radius: 5px;
     color: white;
     background-color: rgb(108, 108, 224);
     margin-top: 30px;

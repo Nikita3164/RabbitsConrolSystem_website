@@ -14,8 +14,8 @@
             {% csrf_token %}
             {{ form.as_p }}
             <a class="password">Восстановление пароля</a>
-            <a class="reg">Регистрация</a>
-            <button type="submit">Log In</button>
+            <a class="reg" href="/authorization/signup">Регистрация</a>
+            <button type="submit">Войти</button>
         </form>
     </div>
 {% endblock %}

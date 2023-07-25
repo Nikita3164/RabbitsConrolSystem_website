@@ -14,4 +14,8 @@ def monitoring(request):
         return render(request, 'main/monitoring.html')
     else:
         return HttpResponseRedirect('authorization/login/')
+
+
+def profile(request):
+    return render(request, 'main/profile.html')
         
