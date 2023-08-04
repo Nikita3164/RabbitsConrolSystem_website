@@ -9,5 +9,34 @@
 {% block content %}
     <div class="container">
         <h2>{{ user.username }}, ваши группы кроликов:</h2>
+        <h3>Таблица кроликов</h3>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Кличка</th>
+                <th>Температура</th>
+                <th>Средняя температура</th>
+                <th>Пульс</th>
+                <th>Средний пульс</th>
+            </tr>
+            {% for rabbit in rabbits %}
+            <tr>
+                <!--
+                <td>{{ rabbit.0 }}</td>
+                <td>{{ rabbit.1 }}</td>
+                <td>{{ rabbit.2 }}</td>
+                <td>{{ rabbit.3 }}</td>
+                <td>{{ rabbit.4 }}</td>
+                <td>{{ rabbit.5 }}</td>
+                -->
+                <td>{{ rabbit.rabbit_id }}</td>
+                <td>{{ rabbit.rabbit_name }}</td>
+                <td>{{ rabbit.rabbit_temp }}</td>
+                <td>{{ rabbit.rabbit_temp_med }}</td>
+                <td>{{ rabbit.rabbit_pulse }}</td>
+                <td>{{ rabbit.rabbit_pulse_med }}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </div>
 {% endblock %}

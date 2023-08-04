@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-# Create your views here.
+from .apps import get_rabbits 
+from .models import Rabbit
+
+
 def index(request):
     return render(request, 'main/main.html')
 
@@ -11,7 +14,9 @@ def setup(request):
 
 def monitoring(request):
     if request.user.is_authenticated:
-        return render(request, 'main/monitoring.html')
+        rabbits = Rabbit.objects.all()
+        print(rabbits)
+        return render(request, 'main/monitoring.html', { 'rabbits': rabbits })
     else:
         return HttpResponseRedirect('authorization/login/')
 

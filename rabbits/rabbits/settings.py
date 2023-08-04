@@ -83,6 +83,15 @@ DATABASES = {
         'PASSWORD': 'Nkt2004!',
         'HOST': 'localhost',
         'PORT': '3306',
+    },
+
+    'rabbits': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'rabbits',
+        'USER': 'root',
+        'PASSWORD': 'Nkt2004!',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
