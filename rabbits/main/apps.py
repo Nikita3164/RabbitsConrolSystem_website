@@ -11,5 +11,5 @@ def get_rabbits():
     rbt_connection = connections['rabbits']
     with rbt_connection.cursor() as cursor:
             cursor.execute("SELECT * FROM rabbits_group_1")
-            row = cursor.fetchall()     # получаем одну строку
+            row = cursor.fetchall()
             return row

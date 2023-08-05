@@ -5,6 +5,25 @@ h2{
     font-size: 30px;
 }
 
+#get_test_data{
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(108, 108, 224);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}   
+
+#get_test_data:hover{
+    background-color: rgb(69, 69, 221);
+    cursor: pointer;
+}
+
+.risk td{
+    background-color: red !important;
+}
+
 table{
     width: 100%;
     padding-bottom: 40px;

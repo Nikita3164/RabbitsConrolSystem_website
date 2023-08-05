@@ -26,4 +26,6 @@ urlpatterns = [
     path('authorization/', include('django.contrib.auth.urls')),
     path('authorization/', include('authorization.urls')),
     path('test/', include('authorization.urls')),
+    path('get_rabbits_data/', include('main.urls')),
+    path('post_test_data/', include('main.urls'))
 ]

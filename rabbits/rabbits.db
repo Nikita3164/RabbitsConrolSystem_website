@@ -1,1 +1,25 @@
+CREATE DATABASE rabbits;
 USE rabbits;
+
+CREATE table rabbits_group_1
+(
+  rabbit_id int,
+  rabbit_name text,
+    rabbit_temp float,
+    rabbit_temp_med float,
+    rabbit_pulse float,
+    rabbit_pulse_med float
+);
+
+INSERT INTO rabbits_group_1 (rabbit_id, rabbit_name, rabbit_temp, rabbit_temp_med, rabbit_pulse, rabbit_pulse_med)
+VALUES
+(1, 'Барсик', 38.3, 38.1, 115.2, 112.5),
+(2, 'Мурзик', 38.0, 37.9, 110.5, 107.8),
+(3, 'Рыжик', 38.2, 38.0, 112.8, 110.2),
+(4, 'Васька', 37.9, 37.8, 108.7, 106.9),
+(5, 'Матильда', 38.5, 38.2, 113.6, 110.8),
+(6, 'Тимофей', 38.1, 37.9, 109.9, 108.3),
+(7, 'Снежок', 38.4, 38.0, 112.0, 109.7),
+(8, 'Маруся', 37.7, 37.6, 106.9, 105.6),
+(9, 'Черныш', 38.0, 37.9, 111.3, 109.0),
+(10, 'Пушок', 38.6, 38.3, 114.7, 112.3);
