@@ -24,7 +24,7 @@ function updateTable() {
             tableBody.innerHTML = ''; // Очищаем содержимое строк
             for (let i = 0; i < data.length; i++) {
                 let row = tableBody.insertRow(); // Вставляем новую строку в конец тела таблицы
-                if (Math.abs(data[i].rabbit_temp_med - data[i].rabbit_temp) > 1.5 || Math.abs(data[i].rabbit_pulse_med - data[i].rabbit_pulse) > 20) {
+                if (data[i].risk != "Нет") {
                     row.classList.add("risk");
                 }
                 row.insertCell(0).innerHTML = data[i].rabbit_id;
@@ -33,10 +33,13 @@ function updateTable() {
                 row.insertCell(3).innerHTML = data[i].rabbit_temp_med.toFixed(1);
                 row.insertCell(4).innerHTML = data[i].rabbit_pulse.toFixed(1);
                 row.insertCell(5).innerHTML = data[i].rabbit_pulse_med.toFixed(1);
+                row.insertCell(6).innerHTML = data[i].risk;
             }
         }
     });
 }
+
+window.addEventListener('load', updateTable)
 
 // Обновляем таблицу каждые 5 секунд
 setInterval(updateTable, 5000);

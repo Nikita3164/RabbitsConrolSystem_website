@@ -15,6 +15,7 @@ class Rabbit(models.Model):
     rabbit_temp_med = models.FloatField()
     rabbit_pulse = models.FloatField()
     rabbit_pulse_med = models.FloatField()
+    risk = models.TextField()
 
     class Meta:
         db_table = 'rabbits_group_1'

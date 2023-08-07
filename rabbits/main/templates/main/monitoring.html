@@ -20,6 +20,7 @@
                     <th>Средняя температура</th>
                     <th>Пульс</th>
                     <th>Средний пульс</th>
+                    <th>Риски</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +40,7 @@
                     <td>{{ rabbit.rabbit_temp_med }}</td>
                     <td>{{ rabbit.rabbit_pulse }}</td>
                     <td>{{ rabbit.rabbit_pulse_med }}</td>
+                    <td> {{ rabbit.risk }} </td>
                 </tr>
                 {% endfor %}
             </tbody>
